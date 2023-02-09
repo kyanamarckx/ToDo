@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+</head>
+<body class="mocha" id="body">
+  <h1>To Do List</h1>
+
+  <div>
+    <label for="task" class="labelTask">Task</label>
+    <input type="text" name="task" id="task" class="task" required>
+    <button id="add">Add</button>
+  </div>
+
+  <br>
+
+  <div>
+    <label for="description" class="labelDescription">Description</label>
+    <textarea name="description" id="description" class="description"></textarea>
+  </div>
+
+  <br>
+
+  <div>
+    <label for="deadline" class="labelDeadline">Deadline</label>
+    <input type="datetime-local" name="date" id="date" class="deadline">
+  </div>
+
+
+  <table>
+    <tr>
+      <td>*Done*</td>
+      <td>Task</td>
+      <td>Description</td>
+      <td>Deadline</td>
+      <td>Status</td>
+      <td>Update</td>
+      <td>Delete</td>
+    </tr>
+    
+    <tr>
+      <td id="tdDONE"><input type="checkbox" name="checkboxDONE" id="checkboxDONE"></td>
+      <td id="tdTASK">Taak test</td>
+      <td id="tdDESCRIPTION">Test kjnbsvod</td>
+      <td id="tdDEADLINE">7 febr</td>
+      <td id="tdSTATUS">input</td>
+      <td id="tdUPDATE"></td>
+      <td id="tdDELETE"></td>
+    </tr>
+
+    <tr id="tr">
+
+    </tr>
+
+  </table>
+
+  <ul id="list"></ul>
+
+  <footer>
+      <button class="milk-mocha-BUTTON" id="milk-mocha-BUTTON"><img src="../images/milk.jpg" class="milk-mocha-IMG" id="milk-mocha-IMG" width="50px" height="50px" alt=""></button>
+    
+  </footer>
+
+  <script src="../js/index.js"></script>
+</body>
+</html>
